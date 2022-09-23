@@ -116,6 +116,7 @@ body {
           flex: 1 1 auto;
 }
 .logo__title {
+  margin-top: 5px;
   font-weight: 400;
   font-size: 19.0145px;
   line-height: 120%;
@@ -185,18 +186,34 @@ body {
 .watch {
   position: relative;
   margin-top: -80px;
-  margin-bottom: 15px;
   background: url("../img/Giant Panda.jpg") center/cover no-repeat;
 }
-.watch__body {
+.watch__container {
   max-width: 1160px;
-  padding: 166px 0 60px 0;
+  padding: 166.5px 0 100.5px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.watch__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  row-gap: 60px;
 }
 .watch__text {
   max-width: 500px;
@@ -222,12 +239,13 @@ body {
   width: 465px;
   height: 465px;
   bottom: 10px;
-  right: 110px;
+  right: 108px;
   border-radius: 50%;
   background: -o-linear-gradient(336.04deg, #F9804B 1.49%, #FE9013 101.44%);
   background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
 }
 .watch__button {
+  margin-left: 10px;
   width: 298px;
   height: 54px;
   background: -o-linear-gradient(336.04deg, #F9804B 1.49%, #FE9013 101.44%);
@@ -239,8 +257,115 @@ body {
   line-height: 140%;
   text-align: center;
   text-transform: uppercase;
-  margin: 0 0 100px 763px;
   color: #FFFFFF;
+}
+
+.backstage {
+  padding: 140px 0 0 0;
+  position: relative;
+  height: 708px;
+  margin-bottom: 15px;
+}
+.backstage__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.backstage__image {
+  max-width: 609px;
+  max-height: 403px;
+}
+.body {
+  max-width: 465px;
+}
+.body__title-main {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 120%;
+  /* or 58px */
+  color: #333B41;
+  margin: 0 0 22px 0;
+}
+.body__text-main {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  /* or 21px */
+  color: #333B41;
+  margin: 0 0 54px 0;
+}
+.body__title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  margin: 0 0 32px 0;
+  /* identical to box height, or 29px */
+  color: #333B41;
+}
+.body__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  /* or 22px */
+  color: #333B41;
+}
+
+.flower {
+  right: -16px;
+  bottom: 90px;
+  position: absolute;
+  width: 220px;
+  height: 605px;
+  background: url("../img/flower_foto1.png") no-repeat;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.animals__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  row-gap: 20px;
+}
+
+.card__item {
+  border: 1px solid #FA6F32;
+  border-radius: 5px;
+}
+.card__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.card__title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  /* or 22px */
+  text-transform: uppercase;
+  color: #000000;
+}
+.card__text {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 120%;
+  /* identical to box height, or 18px */
+  color: #000000;
+}
+.card__icon {
+  width: 33px;
+  height: 37px;
 }
 
 /* Условные ПК, ноуты и телевизоры */
