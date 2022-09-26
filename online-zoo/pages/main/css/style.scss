@@ -759,7 +759,7 @@ height: 54px;
 
 .testimonials {
 	position: relative;
-	height: 770px;
+	height: 775px;
 	&__container {
 		display: flex;
 		flex-direction: column;
@@ -948,10 +948,10 @@ color: #BDBDBD;
 }
 
 .flower-last {
-	right: 0;
-	bottom: -100px;
+	right: -123px;
+	bottom: 0px;
 position: absolute;
-
+z-index: -5;
  width: 368px;
  height: 275px;
 	background: url("../img/leav_foto.png") no-repeat;
@@ -959,6 +959,316 @@ position: absolute;
 
 
 
+// ===================================================FOOTER==========================================
+
+
+.footer {
+	background: #111115;
+	
+	// .footer__container
+
+	&__container {
+
+	}
+
+	&__body {
+		display: flex;
+    padding: 43px 0;
+	 max-width: 100%;
+	}
+
+	// .footer__contacts
+
+	&__contacts {
+		display: flex;
+		flex-direction: column;
+	}
+
+	// .footer__logo
+
+	&__logo {
+
+	}
+
+	// .footer__button
+
+	&__button {
+
+
+	}
+
+	&__btn {
+		width: 298px;
+    height: 54px;
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    border-radius: 25px;
+    border: 0px;
+    color: #FFFFFF;
+	 align-self: flex-start;
+    border-radius: 5px;
+	 font-weight: 500;
+font-size: 15px;
+line-height: 1.15;
+/* or 22px */
+
+text-align: center;
+text-transform: uppercase;
+margin-bottom: 49px;
+	}
+
+	// .footer__navigation
+
+	&__navigation {
+		
+	}
+
+	// .footer__form
+
+	&__form {
+	}
+
+	// .footer__design
+
+	&__design {
+		align-self: flex-end;
+    margin-top: 217px;
+    color: white;
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 130%;
+	 font-family: 'Roboto';
+font-style: normal;
+
+	}
+
+	// .footer__text
+
+	&__text {
+		margin-bottom: 9px;
+	}
+}
+.logotip {
+position: relative;
+margin-bottom: 68px;
+
+	&__text {
+		 width: 82px;
+	 height: 52px;
+		font-weight: 400;
+		font-size: 19.0145px;
+		line-height: 120%;
+		/* or 23px */
+		
+		text-align: center;
+		
+		color: #FFFFFF;
+		
+		border: 1.18841px solid #FFFFFF;
+    
+		
+
+	}
+
+	// .logotip__img
+
+	&__img {
+		position: absolute;
+		left: 10px;
+		top: 20px;
+	}
+}
+.btn {
+
+}
+.media {
+
+	.media__link {
+		display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: white;
+  }
+  .media__fb::before {
+	display: inline-block;
+	content: '';
+	background: url("../img/face.svg");
+	width: 26px;
+	height: 26px;
+	margin-right: 12px;
+}
+.media__tw::before {
+	display: inline-block;
+	content: '';
+	background: url("../img/tw.svg");
+	width: 26px;
+	height: 26px;
+	margin-right: 12px;
+}
+.media__ig::before {
+	display: inline-block;
+	content: '';
+	background: url("../img/inst.svg");
+	width: 26px;
+	height: 26px;
+	margin-right: 12px;
+}
+.media__yt::before {
+	display: inline-block;
+	content: '';
+	background: url("../img/yu.svg");
+	width: 26px;
+	height: 26px;
+	margin-right: 12px;
+}
+
+
+
+	// .media__twitter
+
+	
+}
+.nav {
+	align-self: flex-end;
+    margin-left: 103px;
+    margin-bottom: 19px;
+    flex-grow: 0;
+
+	// .nav__menu
+
+	&__menu {
+		display: flex;
+		font-family: 'Roboto';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 1.15;
+		
+			justify-content: space-between;
+			
+			gap: 58px;
+
+		
+		
+		color: #FFFFFF;
+		
+	}
+
+	// .nav__li
+
+	&__li {
+		
+		// .nav__li_about
+
+		&_about {
+			a {
+				font-family: 'Roboto';
+				font-style: normal;
+				font-weight: 400;
+				font-size: 16px;
+				line-height: 140%;
+				/* or 22px */
+				
+				
+				color: #F9804B;
+				
+			}
+		}
+
+		// .nav__li_map
+
+		&_map {
+		}
+
+		// .nav__li_zoos
+
+		&_zoos {
+		}
+
+		// .nav__li_contact-us
+
+		&_contact-us {
+		}
+	}
+
+	// .nav__about
+
+	&__about {
+		
+	}
+}
+.form {
+	margin-left: 30px;
+	display: flex;
+	flex-direction: column;
+	// .form__title
+
+	&__title {
+		font-weight: 400;
+		font-size: 24px;
+		line-height: 120%;
+		color: #FFFFFF;
+		margin-bottom: 14px;
+	}
+
+	// .form__body
+
+	&__body {
+		display: flex;
+	}
+
+	// .form__input
+
+	&__input {
+		color: white;
+    width: 228px;
+    height: 40px;
+    border-radius: 2px;
+    border: 0.7px solid #F9804B;
+    background: none;
+    padding: 0 10px;
+    margin-right: 10px;
+    outline: none;
+	 &::placeholder {
+		font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 140%;
+/* or 22px */
+
+
+/* Gray 4 */
+
+color: #BDBDBD;
+	 }
+	}
+
+	// .form__btn
+
+	&__btn {
+		width: 128px;
+    height: 40px;
+    background: #F1F3F2;
+	 border: 1px solid #4B9200;
+    border-radius: 5px;
+    color: #4B9200;
+    cursor: pointer;
+	
+		font-family: 'Roboto';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 140%;
+		/* or 22px */
+		
+		
+		/* Green */
+		
+	
+	 
+	}
+}
 
 
 
