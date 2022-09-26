@@ -171,6 +171,9 @@ body {
 .menu__link_about {
   color: #FFFFFF;
 }
+.menu__link_about:hover {
+  color: #F9804B;
+}
 .menu__link_donate {
   color: #F9804B;
 }

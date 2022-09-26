@@ -258,6 +258,16 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
+  -webkit-transition: all 1.3s ease 0s;
+  -o-transition: all 1.3s ease 0s;
+  transition: all 1.3s ease 0s;
+}
+.watch__button:hover {
+  background: -o-linear-gradient(336.04deg, #f15512 1.49%, #f15512 101.44%);
+  background: linear-gradient(113.96deg, #f15512 1.49%, #f15512 101.44%);
+  -webkit-transition: all 1.3s ease 0s;
+  -o-transition: all 1.3s ease 0s;
+  transition: all 1.3s ease 0s;
 }
 
 .backstage {
@@ -327,33 +337,38 @@ body {
 .animals {
   position: relative;
 }
+.animals__arrow-left {
+  content: "";
+  position: absolute;
+  top: 405px;
+  left: 140px;
+  bottom: 0px;
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  display: inline-block;
+  background: url("../img/left.svg");
+}
+.animals__arrow-left:hover {
+  background: url("../img/green_left.svg");
+}
+.animals__arrow-right {
+  content: "";
+  position: absolute;
+  top: 405px;
+  right: 140px;
+  bottom: 0px;
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  background: url("../img/right.svg");
+}
+.animals__arrow-right:hover {
+  background: url("../img/green_right.svg");
+}
 .animals__body {
   margin: 0 0 100px 0;
   position: relative;
-}
-.animals__body::before {
-  content: "";
-  position: absolute;
-  top: 405px;
-  left: -80px;
-  bottom: 0px;
-  width: 62px;
-  height: 62px;
-  border-radius: 50%;
-  background: -o-linear-gradient(336.04deg, #F9804B 1.49%, #FE9013 101.44%);
-  background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
-}
-.animals__body::after {
-  content: "";
-  position: absolute;
-  top: 405px;
-  right: -80px;
-  bottom: 0px;
-  width: 62px;
-  height: 62px;
-  border-radius: 50%;
-  background: -o-linear-gradient(336.04deg, #F9804B 1.49%, #FE9013 101.44%);
-  background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
 }
 .animals__button {
   width: 298px;
@@ -368,6 +383,13 @@ body {
   color: #FFFFFF;
   display: block;
   margin: 0 auto;
+}
+.animals__button:hover {
+  background: -o-linear-gradient(336.04deg, #f15512 1.49%, #f15512 101.44%);
+  background: linear-gradient(113.96deg, #f15512 1.49%, #f15512 101.44%);
+  -webkit-transition: all 1.3s ease 0s;
+  -o-transition: all 1.3s ease 0s;
+  transition: all 1.3s ease 0s;
 }
 
 .card__items {
@@ -386,8 +408,25 @@ body {
   border: 1px solid #FA6F32;
   border-radius: 5px;
 }
+.card__item:hover {
+  -webkit-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+  border: 1px solid transparent;
+}
 .card__img {
   margin: 0 0 8px 0;
+  -webkit-transition: all 1s ease 0s;
+  -o-transition: all 1s ease 0s;
+  transition: all 1s ease 0s;
+}
+.card__img:hover {
+  -webkit-transform: scale(1.08);
+      -ms-transform: scale(1.08);
+          transform: scale(1.08);
+  -webkit-transition: all 1s ease 0s;
+  -o-transition: all 1s ease 0s;
+  transition: all 1s ease 0s;
 }
 .card__bottom {
   display: -webkit-box;
@@ -398,8 +437,17 @@ body {
           align-items: center;
   margin: 0 0 10px 15px;
 }
+.card__bottom:hover {
+  -webkit-transform: translate(0px, -350px);
+      -ms-transform: translate(0px, -350px);
+          transform: translate(0px, -350px);
+  -webkit-transition: all 1.9s ease 0s;
+  -o-transition: all 1.9s ease 0s;
+  transition: all 1.9s ease 0s;
+}
 .card__body {
   width: 305px;
+  cursor: pointer;
 }
 .card__body_fish {
   width: 295px;
@@ -410,6 +458,15 @@ body {
   /* or 22px */
   text-transform: uppercase;
   color: #000000;
+}
+.card__title:hover {
+  -webkit-transform: translate(0px, -350px);
+      -ms-transform: translate(0px, -350px);
+          transform: translate(0px, -350px);
+  -webkit-transition: all 1.9s ease 0s;
+  -o-transition: all 1.9s ease 0s;
+  transition: all 1.9s ease 0s;
+  font-size: 0px;
 }
 .card__text {
   font-weight: 300;
@@ -530,6 +587,13 @@ body {
   border-radius: 25px;
   width: 298px;
   height: 54px;
+}
+.pick__btn:hover {
+  background: -o-linear-gradient(336.04deg, #f15512 1.49%, #f15512 101.44%);
+  background: linear-gradient(113.96deg, #f15512 1.49%, #f15512 101.44%);
+  -webkit-transition: all 1.3s ease 0s;
+  -o-transition: all 1.3s ease 0s;
+  transition: all 1.3s ease 0s;
 }
 
 .items {
@@ -681,6 +745,11 @@ body {
   cursor: pointer;
   -webkit-appearance: none;
 }
+.testimonials input[type=range]::-webkit-slider-thumb:hover {
+  background: linear-gradient(113.96deg, #f15512 1.49%, #f15512 101.44%);
+  -webkit-transition: all 1.3s ease 0s;
+  transition: all 1.3s ease 0s;
+}
 .testimonials input[type=range]:focus::-webkit-slider-runnable-track {
   background: #F5F7F6;
 }
@@ -711,6 +780,13 @@ body {
   /* or 22px */
   text-align: center;
   text-transform: uppercase;
+}
+.testimonials__btn:hover {
+  background: -o-linear-gradient(336.04deg, #f15512 1.49%, #f15512 101.44%);
+  background: linear-gradient(113.96deg, #f15512 1.49%, #f15512 101.44%);
+  -webkit-transition: all 1.3s ease 0s;
+  -o-transition: all 1.3s ease 0s;
+  transition: all 1.3s ease 0s;
 }
 
 .item-testimonials {
@@ -812,6 +888,13 @@ body {
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 49px;
+}
+.footer__btn:hover {
+  background: -o-linear-gradient(336.04deg, #f15512 1.49%, #f15512 101.44%);
+  background: linear-gradient(113.96deg, #f15512 1.49%, #f15512 101.44%);
+  -webkit-transition: all 1.3s ease 0s;
+  -o-transition: all 1.3s ease 0s;
+  transition: all 1.3s ease 0s;
 }
 .footer__design {
   -ms-flex-item-align: end;
@@ -959,6 +1042,11 @@ body {
   margin-right: 10px;
   outline: none;
 }
+.form__input:invalid {
+  border-color: red;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
 .form__input::-webkit-input-placeholder {
   font-family: "Roboto";
   font-style: normal;
@@ -1023,7 +1111,6 @@ body {
   font-size: 16px;
   line-height: 140%;
   /* or 22px */
-  /* Green */
 }
 
 /* Условные ПК, ноуты и телевизоры */

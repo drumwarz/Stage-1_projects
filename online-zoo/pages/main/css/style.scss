@@ -261,6 +261,12 @@ z-index: 1;
       text-align: center;
       text-transform: uppercase;
       color: #FFFFFF;
+		transition: all 1.3s ease 0s;
+		&:hover {
+			
+			background: linear-gradient(113.96deg, #f15512 1.49%, #f15512 101.44%);
+			transition: all 1.3s ease 0s;
+		}
 	}
 }
 
@@ -375,37 +381,45 @@ position: absolute;
 		
 		
 	}
+	&__arrow-left {
+		content: '';
+		position: absolute;
+		top: 405px;
+		left: 140px;
+		bottom: 0px;
+		width: 62px;
+		height: 62px;
+		border-radius: 50%;
+		display: inline-block;
+		background: url("../img/left.svg");
+   &:hover {
+		background: url("../img/green_left.svg");
+	}
+	}
 
+	
+	&__arrow-right {
+		content: '';
+		position: absolute;
+		top: 405px;
+		right: 140px;
+		bottom: 0px;
+		width: 62px;
+		height: 62px;
+		border-radius: 50%;
+		background: url("../img/right.svg");
+		&:hover {
+			background: url("../img/green_right.svg");
+		}
+	}
 	// .animals__body
 
 	&__body {
 
 		margin: 0 0 100px 0;
 		position: relative;
-		&::before {
-			content: '';
-         position: absolute;
-			top: 405px;
-			left: -80px;
-			bottom: 0px;
-			width: 62px;
-height: 62px;
-			border-radius: 50%;
-			background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
-			
-		}
-		&::after {
-			content: '';
-         position: absolute;
-			top: 405px;
-			right: -80px;
-			bottom: 0px;
-			width: 62px;
-			height: 62px;
-			border-radius: 50%;
-			background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
-			
-		}
+		
+
 		
 	}
 
@@ -422,6 +436,11 @@ text-transform: uppercase;
 color: #FFFFFF;
 display: block;
 margin: 0 auto;
+&:hover {
+			
+	background: linear-gradient(113.96deg, #f15512 1.49%, #f15512 101.44%);
+	transition: all 1.3s ease 0s;
+}
 	}
 }
 
@@ -438,20 +457,38 @@ margin: 0 auto;
 	// .card__item
 
 	&__item {
+		
 		border: 1px solid #FA6F32;
 		border-radius: 5px;
+		&:hover {
+			transition: all .4s ease 0s;
+         
+			border: 1px solid transparent;
+		}
 	}
 
 	// .card__img
 
 	&__img {
 		margin: 0 0 8px 0;
+		transition: all 1s ease 0s;
+		&:hover {
+			transform: scale(1.08);
+			transition: all 1s ease 0s;
+			
+
+		}
 	}
 	&__bottom {
+		
 		display: flex;
 		align-items: center;
 		margin: 0 0 10px 15px;
-		
+		&:hover {
+			transform: translate(0px, -350px);
+			transition: all 1.9s ease 0s;
+
+		}
 		
 		
 	}
@@ -459,6 +496,8 @@ margin: 0 auto;
 
 	&__body {
 		width: 305px;
+		cursor: pointer;
+
 		&_fish {
 			width:295px;
 		}
@@ -475,6 +514,11 @@ font-size: 16px;
 text-transform: uppercase;
 
 color: #000000;
+&:hover {
+	transform: translate(0px, -350px);
+	transition: all 1.9s ease 0s;
+	font-size: 0px;
+}
 	}
 
 	// .card__text
@@ -662,6 +706,11 @@ background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
 border-radius: 25px;
 width: 298px;
 height: 54px;
+&:hover {
+			
+	background: linear-gradient(113.96deg, #f15512 1.49%, #f15512 101.44%);
+	transition: all 1.3s ease 0s;
+}
 	}
 }
 .items {
@@ -840,6 +889,11 @@ color: #F5F7F6;
 		background: #FE9013;
 		cursor: pointer;
 		-webkit-appearance: none;
+		&:hover {
+			
+			background: linear-gradient(113.96deg, #f15512 1.49%, #f15512 101.44%);
+			transition: all 1.3s ease 0s;
+		}
 		
 	 }
 	 input[type=range]:focus::-webkit-slider-runnable-track {
@@ -872,6 +926,11 @@ line-height: 1.15;
 
 text-align: center;
 text-transform: uppercase;
+&:hover {
+			
+	background: linear-gradient(113.96deg, #f15512 1.49%, #f15512 101.44%);
+	transition: all 1.3s ease 0s;
+}
 	}
 	
 }
@@ -1014,6 +1073,11 @@ line-height: 1.15;
 text-align: center;
 text-transform: uppercase;
 margin-bottom: 49px;
+&:hover {
+			
+	background: linear-gradient(113.96deg, #f15512 1.49%, #f15512 101.44%);
+	transition: all 1.3s ease 0s;
+}
 	}
 
 	// .footer__navigation
@@ -1229,6 +1293,11 @@ margin-bottom: 68px;
     padding: 0 10px;
     margin-right: 10px;
     outline: none;
+	 &:invalid {
+		border-color: red;
+		
+		box-shadow: none;
+  }
 	 &::placeholder {
 		font-family: 'Roboto';
 font-style: normal;
@@ -1261,11 +1330,8 @@ color: #BDBDBD;
 		font-size: 16px;
 		line-height: 140%;
 		/* or 22px */
-		
-		
-		/* Green */
-		
-	
+
+
 	 
 	}
 }
