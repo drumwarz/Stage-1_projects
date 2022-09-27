@@ -945,6 +945,12 @@ body {
   text-decoration: none;
   color: white;
 }
+.media .media__link:hover {
+  -webkit-transition: all 0s ease 0s;
+  -o-transition: all 0s ease 0s;
+  transition: all 0s ease 0s;
+  color: #F9804B;
+}
 .media .media__fb::before {
   display: inline-block;
   content: "";
@@ -1009,6 +1015,48 @@ body {
   font-size: 16px;
   line-height: 140%;
   /* or 22px */
+  color: #F9804B;
+}
+.nav__li_map {
+  -webkit-transition: all 0s ease 0s;
+  -o-transition: all 0s ease 0s;
+  transition: all 0s ease 0s;
+}
+.nav__li_map:hover {
+  -webkit-transition: all 0s ease 0s;
+  -o-transition: all 0s ease 0s;
+  transition: all 0s ease 0s;
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+  color: #F9804B;
+}
+.nav__li_zoos {
+  -webkit-transition: all 0s ease 0s;
+  -o-transition: all 0s ease 0s;
+  transition: all 0s ease 0s;
+}
+.nav__li_zoos:hover {
+  -webkit-transition: all 0s ease 0s;
+  -o-transition: all 0s ease 0s;
+  transition: all 0s ease 0s;
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+  color: #F9804B;
+}
+.nav__li_contact-us {
+  -webkit-transition: all 0s ease 0s;
+  -o-transition: all 0s ease 0s;
+  transition: all 0s ease 0s;
+}
+.nav__li_contact-us:hover {
+  -webkit-transition: all 0s ease 0s;
+  -o-transition: all 0s ease 0s;
+  transition: all 0s ease 0s;
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
   color: #F9804B;
 }
 .form {
