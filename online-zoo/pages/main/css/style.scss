@@ -482,7 +482,6 @@ margin: 0 auto;
 			transform: scale(1.08);
 			transition: all 1s ease 0s;
 			background-color:rgba(0, 0, 0, .5);
-
 		}
 		// &:hover {
 		// 	transform: scale(1.08);
@@ -1260,6 +1259,7 @@ margin-bottom: 68px;
 		// .nav__li_map
 
 		&_map {
+			cursor: pointer;
 			transition: all 0.0s ease 0s;
 			&:hover {
 				transition: all 0.0s ease 0s;
@@ -1271,6 +1271,7 @@ margin-bottom: 68px;
 		// .nav__li_zoos
 
 		&_zoos {
+			cursor: pointer;
 			transition: all 0.0s ease 0s;
 			&:hover {
 				transition: all 0.0s ease 0s;
@@ -1282,6 +1283,7 @@ margin-bottom: 68px;
 		// .nav__li_contact-us
 
 		&_contact-us {
+			cursor: pointer;
 			transition: all 0.0s ease 0s;
 			&:hover {
 				transition: all 0.0s ease 0s;
@@ -1329,11 +1331,14 @@ margin-bottom: 68px;
     padding: 0 10px;
     margin-right: 10px;
     outline: none;
-	 &:invalid {
-		border-color: red;
-		
-		box-shadow: none;
-  }
+
+&:valid:focus {
+    border: 0.7px solid #4B9200;
+}
+
+&:invalid:focus {
+    border: 0.7px solid #D31414;
+}
 	 &::placeholder {
 		font-family: 'Roboto';
 font-style: normal;
@@ -1370,6 +1375,15 @@ color: #BDBDBD;
 
 	 
 	}
+	input:valid:focus + .form__btn {
+		border: 1px solid #4B9200;
+		color: green;
+  }
+  
+  input:invalid:focus + .form__btn {
+		border: 1px solid #D31414;
+		color: #D31414;
+  }
 }
 
 
