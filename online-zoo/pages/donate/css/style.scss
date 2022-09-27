@@ -144,7 +144,7 @@ body {
 			line-height: 140%;
 			transition: all 0.0s ease 0s;
 			&:hover {
-				transition: all 0.0s ease 0s;
+				transition: all 0.3s ease 0s;
 				transform: scale(1.2);
 				color: #F9804B;
 			}
@@ -153,6 +153,11 @@ body {
 				font-weight: 500;
 				font-size: 16px;
 				line-height: 140%;
+				&:hover {
+					transition: all 0.3s ease 0s;
+					transform: scale(1.2);
+					color: #F9804B;
+				}
 			}
 		}
 	
@@ -163,6 +168,8 @@ body {
 			&_about {
 				color: #FFFFFF;
 				&:hover {
+					transition: all 0.3s ease 0s;
+					transform: scale(1.2);
 					color: #F9804B;
 				}
 			}
