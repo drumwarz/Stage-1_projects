@@ -777,6 +777,11 @@ margin-bottom: 68px;
     margin-bottom: 10px;
     text-decoration: none;
     color: white;
+	 &:hover {
+		transition: all 0.0s ease 0s;
+	
+		color: #F9804B;
+	}
   }
   .media__fb::before {
 	display: inline-block;
@@ -850,6 +855,12 @@ margin-bottom: 68px;
 		// .nav__li_about
 
 		&_about {
+			&:hover {
+				transition: all 0.0s ease 0s;
+				transform: scale(1.2);
+				color: #F9804B;
+			}
+
 			a {
 				font-family: 'Roboto';
 				font-style: normal;
@@ -859,24 +870,46 @@ margin-bottom: 68px;
 				/* or 22px */
 				
 				
-				color: #F9804B;
-				
+				color: #FFFFFF;
+				&:hover {
+					transition: all 0.0s ease 0s;
+					transform: scale(1.2);
+					color: #F9804B;
+				}
 			}
 		}
 
 		// .nav__li_map
 
 		&_map {
+			transition: all 0.0s ease 0s;
+			&:hover {
+				transition: all 0.0s ease 0s;
+				transform: scale(1.2);
+				color: #F9804B;
+			}
 		}
 
 		// .nav__li_zoos
 
 		&_zoos {
+			transition: all 0.0s ease 0s;
+			&:hover {
+				transition: all 0.0s ease 0s;
+				transform: scale(1.2);
+				color: #F9804B;
+			}
 		}
 
 		// .nav__li_contact-us
 
 		&_contact-us {
+			transition: all 0.0s ease 0s;
+			&:hover {
+				transition: all 0.0s ease 0s;
+				transform: scale(1.2);
+				color: #F9804B;
+			}
 		}
 	}
 
