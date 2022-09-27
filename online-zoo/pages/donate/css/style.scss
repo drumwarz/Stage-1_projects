@@ -851,7 +851,7 @@ margin-bottom: 68px;
 	// .nav__li
 
 	&__li {
-		
+		cursor: pointer;
 		// .nav__li_about
 
 		&_about {
@@ -882,6 +882,7 @@ margin-bottom: 68px;
 		// .nav__li_map
 
 		&_map {
+			cursor: pointer;
 			transition: all 0.0s ease 0s;
 			&:hover {
 				transition: all 0.0s ease 0s;
@@ -893,6 +894,7 @@ margin-bottom: 68px;
 		// .nav__li_zoos
 
 		&_zoos {
+			cursor: pointer;
 			transition: all 0.0s ease 0s;
 			&:hover {
 				transition: all 0.0s ease 0s;
@@ -904,6 +906,7 @@ margin-bottom: 68px;
 		// .nav__li_contact-us
 
 		&_contact-us {
+			cursor: pointer;
 			transition: all 0.0s ease 0s;
 			&:hover {
 				transition: all 0.0s ease 0s;

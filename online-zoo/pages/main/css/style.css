@@ -1018,6 +1018,7 @@ body {
   color: #F9804B;
 }
 .nav__li_map {
+  cursor: pointer;
   -webkit-transition: all 0s ease 0s;
   -o-transition: all 0s ease 0s;
   transition: all 0s ease 0s;
@@ -1032,6 +1033,7 @@ body {
   color: #F9804B;
 }
 .nav__li_zoos {
+  cursor: pointer;
   -webkit-transition: all 0s ease 0s;
   -o-transition: all 0s ease 0s;
   transition: all 0s ease 0s;
@@ -1046,6 +1048,7 @@ body {
   color: #F9804B;
 }
 .nav__li_contact-us {
+  cursor: pointer;
   -webkit-transition: all 0s ease 0s;
   -o-transition: all 0s ease 0s;
   transition: all 0s ease 0s;

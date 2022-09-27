@@ -756,6 +756,9 @@ input[type=range]::-moz-range-track {
   gap: 58px;
   color: #FFFFFF;
 }
+.nav__li {
+  cursor: pointer;
+}
 .nav__li_about:hover {
   -webkit-transition: all 0s ease 0s;
   -o-transition: all 0s ease 0s;
@@ -784,6 +787,7 @@ input[type=range]::-moz-range-track {
   color: #F9804B;
 }
 .nav__li_map {
+  cursor: pointer;
   -webkit-transition: all 0s ease 0s;
   -o-transition: all 0s ease 0s;
   transition: all 0s ease 0s;
@@ -798,6 +802,7 @@ input[type=range]::-moz-range-track {
   color: #F9804B;
 }
 .nav__li_zoos {
+  cursor: pointer;
   -webkit-transition: all 0s ease 0s;
   -o-transition: all 0s ease 0s;
   transition: all 0s ease 0s;
@@ -812,6 +817,7 @@ input[type=range]::-moz-range-track {
   color: #F9804B;
 }
 .nav__li_contact-us {
+  cursor: pointer;
   -webkit-transition: all 0s ease 0s;
   -o-transition: all 0s ease 0s;
   transition: all 0s ease 0s;
