@@ -408,6 +408,16 @@ body {
   border: 1px solid #FA6F32;
   border-radius: 5px;
 }
+.card__item .card__item:hover .card__bottom {
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: translateY(-45px);
+      -ms-transform: translateY(-45px);
+          transform: translateY(-45px);
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+}
 .card__item:hover {
   -webkit-transition: all 0.4s ease 0s;
   -o-transition: all 0.4s ease 0s;
