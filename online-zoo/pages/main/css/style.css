@@ -419,6 +419,7 @@ body {
   -webkit-transition: all 1s ease 0s;
   -o-transition: all 1s ease 0s;
   transition: all 1s ease 0s;
+  background-color: rgba(0, 0, 0, 0);
 }
 .card__img:hover {
   -webkit-transform: scale(1.08);
@@ -427,6 +428,7 @@ body {
   -webkit-transition: all 1s ease 0s;
   -o-transition: all 1s ease 0s;
   transition: all 1s ease 0s;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .card__bottom {
   display: -webkit-box;

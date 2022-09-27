@@ -461,10 +461,15 @@ margin: 0 auto;
 		border: 1px solid #FA6F32;
 		border-radius: 5px;
 		&:hover {
+
+			img {
+
+			}
 			transition: all .4s ease 0s;
          
 			border: 1px solid transparent;
 		}
+		
 	}
 
 	// .card__img
@@ -472,12 +477,19 @@ margin: 0 auto;
 	&__img {
 		margin: 0 0 8px 0;
 		transition: all 1s ease 0s;
+		background-color:rgba(0, 0, 0, 0);
 		&:hover {
 			transform: scale(1.08);
 			transition: all 1s ease 0s;
-			
+			background-color:rgba(0, 0, 0, .5);
 
 		}
+		// &:hover {
+		// 	transform: scale(1.08);
+		// 	transition: all 1s ease 0s;
+			
+
+		// }
 	}
 	&__bottom {
 		
