@@ -607,6 +607,13 @@ input[type=range]::-moz-range-track {
   text-align: center;
   text-transform: uppercase;
 }
+.form__bttn:hover {
+  background: -o-linear-gradient(336.04deg, #f15512 1.49%, #f15512 101.44%);
+  background: linear-gradient(113.96deg, #f15512 1.49%, #f15512 101.44%);
+  -webkit-transition: all 1.3s ease 0s;
+  -o-transition: all 1.3s ease 0s;
+  transition: all 1.3s ease 0s;
+}
 
 .footer {
   background: #111115;
@@ -645,6 +652,13 @@ input[type=range]::-moz-range-track {
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 49px;
+}
+.footer__btn:hover {
+  background: -o-linear-gradient(336.04deg, #f15512 1.49%, #f15512 101.44%);
+  background: linear-gradient(113.96deg, #f15512 1.49%, #f15512 101.44%);
+  -webkit-transition: all 1.3s ease 0s;
+  -o-transition: all 1.3s ease 0s;
+  transition: all 1.3s ease 0s;
 }
 .footer__design {
   -ms-flex-item-align: end;
