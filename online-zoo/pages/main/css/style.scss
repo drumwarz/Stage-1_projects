@@ -457,7 +457,12 @@ margin: 0 auto;
 	// .card__item
 
 	&__item {
-		
+		.card__item:hover  .card__bottom  {
+  transition: 0.5s;
+  transform: translateY(-45px);
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+}
 		border: 1px solid #FA6F32;
 		border-radius: 5px;
 
