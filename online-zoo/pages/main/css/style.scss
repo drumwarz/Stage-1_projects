@@ -381,37 +381,7 @@ position: absolute;
 		
 		
 	}
-	&__arrow-left {
-		content: '';
-		position: absolute;
-		top: 405px;
-		left: 140px;
-		bottom: 0px;
-		width: 62px;
-		height: 62px;
-		border-radius: 50%;
-		display: inline-block;
-		background: url("../img/left.svg");
-   &:hover {
-		background: url("../img/green_left.svg");
-	}
-	}
 
-	
-	&__arrow-right {
-		content: '';
-		position: absolute;
-		top: 405px;
-		right: 140px;
-		bottom: 0px;
-		width: 62px;
-		height: 62px;
-		border-radius: 50%;
-		background: url("../img/right.svg");
-		&:hover {
-			background: url("../img/green_right.svg");
-		}
-	}
 	// .animals__body
 
 	&__body {
@@ -446,7 +416,37 @@ margin: 0 auto;
 
 
 .card {
+	&__arrow-left {
+		content: '';
+		position: absolute;
+		top: 405px;
+		left: -80px;
+		bottom: 0px;
+		width: 62px;
+		height: 62px;
+		border-radius: 50%;
+		display: inline-block;
+		background: url("../img/left.svg");
+   &:hover {
+		background: url("../img/green_left.svg");
+	}
+	}
+
 	
+	&__arrow-right {
+		content: '';
+		position: absolute;
+		top: 405px;
+		right: -80px;
+		bottom: 0px;
+		width: 62px;
+		height: 62px;
+		border-radius: 50%;
+		background: url("../img/right.svg");
+		&:hover {
+			background: url("../img/green_right.svg");
+		}
+	}
 	&__items {
 		display: flex;
 		flex-wrap: wrap;
