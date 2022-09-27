@@ -337,35 +337,6 @@ body {
 .animals {
   position: relative;
 }
-.animals__arrow-left {
-  content: "";
-  position: absolute;
-  top: 405px;
-  left: 140px;
-  bottom: 0px;
-  width: 62px;
-  height: 62px;
-  border-radius: 50%;
-  display: inline-block;
-  background: url("../img/left.svg");
-}
-.animals__arrow-left:hover {
-  background: url("../img/green_left.svg");
-}
-.animals__arrow-right {
-  content: "";
-  position: absolute;
-  top: 405px;
-  right: 140px;
-  bottom: 0px;
-  width: 62px;
-  height: 62px;
-  border-radius: 50%;
-  background: url("../img/right.svg");
-}
-.animals__arrow-right:hover {
-  background: url("../img/green_right.svg");
-}
 .animals__body {
   margin: 0 0 100px 0;
   position: relative;
@@ -392,6 +363,35 @@ body {
   transition: all 1.3s ease 0s;
 }
 
+.card__arrow-left {
+  content: "";
+  position: absolute;
+  top: 405px;
+  left: -80px;
+  bottom: 0px;
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  display: inline-block;
+  background: url("../img/left.svg");
+}
+.card__arrow-left:hover {
+  background: url("../img/green_left.svg");
+}
+.card__arrow-right {
+  content: "";
+  position: absolute;
+  top: 405px;
+  right: -80px;
+  bottom: 0px;
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  background: url("../img/right.svg");
+}
+.card__arrow-right:hover {
+  background: url("../img/green_right.svg");
+}
 .card__items {
   display: -webkit-box;
   display: -ms-flexbox;
