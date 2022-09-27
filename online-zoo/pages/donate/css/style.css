@@ -858,6 +858,12 @@ input[type=range]::-moz-range-track {
   margin-right: 10px;
   outline: none;
 }
+.form__input:valid:focus {
+  border: 0.7px solid #4B9200;
+}
+.form__input:invalid:focus {
+  border: 0.7px solid #D31414;
+}
 .form__input::-webkit-input-placeholder {
   font-family: "Roboto";
   font-style: normal;
@@ -923,6 +929,14 @@ input[type=range]::-moz-range-track {
   line-height: 140%;
   /* or 22px */
   /* Green */
+}
+.form input:valid:focus + .form__btn {
+  border: 1px solid #4B9200;
+  color: green;
+}
+.form input:invalid:focus + .form__btn {
+  border: 1px solid #D31414;
+  color: #D31414;
 }
 
 /* Условные ПК, ноуты и телевизоры */

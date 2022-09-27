@@ -951,6 +951,13 @@ margin-bottom: 68px;
     padding: 0 10px;
     margin-right: 10px;
     outline: none;
+	 &:valid:focus {
+		border: 0.7px solid #4B9200;
+  }
+  
+  &:invalid:focus {
+		border: 0.7px solid #D31414;
+  }
 	 &::placeholder {
 		font-family: 'Roboto';
 font-style: normal;
@@ -990,6 +997,15 @@ color: #BDBDBD;
 	
 	 
 	}
+	input:valid:focus + .form__btn {
+		border: 1px solid #4B9200;
+		color: green;
+  }
+  
+  input:invalid:focus + .form__btn {
+		border: 1px solid #D31414;
+		color: #D31414;
+  }
 }
 
 
