@@ -640,7 +640,11 @@ line-height: 140%;
 
 text-align: center;
 text-transform: uppercase;
-
+&:hover {
+			
+	background: linear-gradient(113.96deg, #f15512 1.49%, #f15512 101.44%);
+	transition: all 1.3s ease 0s;
+}
 		}
 }
 .btn {
@@ -703,6 +707,11 @@ line-height: 1.15;
 text-align: center;
 text-transform: uppercase;
 margin-bottom: 49px;
+&:hover {
+			
+	background: linear-gradient(113.96deg, #f15512 1.49%, #f15512 101.44%);
+	transition: all 1.3s ease 0s;
+}
 	}
 
 	// .footer__navigation

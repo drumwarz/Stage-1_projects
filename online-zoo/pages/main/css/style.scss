@@ -460,6 +460,7 @@ margin: 0 auto;
 		
 		border: 1px solid #FA6F32;
 		border-radius: 5px;
+
 		&:hover {
 
 			img {
@@ -526,6 +527,7 @@ text-transform: uppercase;
 
 color: #000000;
 &:hover {
+	
 	transform: translate(0px, -350px);
 	transition: all 1.9s ease 0s;
 	font-size: 0px;
