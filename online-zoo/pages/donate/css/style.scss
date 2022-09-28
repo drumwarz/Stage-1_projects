@@ -462,7 +462,8 @@ height: 10px;
 			height: 10px;
 			cursor: pointer;
 			&:hover {
-				transform: scale(1.5);
+				width: 20px;
+				height: 20px;
 			
 				transition: all 0.0s ease 0s;
 			}

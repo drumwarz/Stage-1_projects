@@ -426,9 +426,8 @@ input[type=range]::-moz-range-track {
   cursor: pointer;
 }
 .pay__circle:hover {
-  -webkit-transform: scale(1.5);
-      -ms-transform: scale(1.5);
-          transform: scale(1.5);
+  width: 20px;
+  height: 20px;
   -webkit-transition: all 0s ease 0s;
   -o-transition: all 0s ease 0s;
   transition: all 0s ease 0s;
