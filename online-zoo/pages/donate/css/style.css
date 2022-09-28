@@ -425,6 +425,14 @@ input[type=range]::-moz-range-track {
   height: 10px;
   cursor: pointer;
 }
+.pay__circle:hover {
+  -webkit-transform: scale(1.5);
+      -ms-transform: scale(1.5);
+          transform: scale(1.5);
+  -webkit-transition: all 0s ease 0s;
+  -o-transition: all 0s ease 0s;
+  transition: all 0s ease 0s;
+}
 .pay__dollars-ul {
   padding-top: 13px;
   width: 980px;
