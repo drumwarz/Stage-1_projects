@@ -182,6 +182,9 @@ body {
   line-height: 140%;
   color: #FFFFFF;
 }
+.design__link:hover {
+  color: #F9804B;
+}
 
 .watch {
   position: relative;
