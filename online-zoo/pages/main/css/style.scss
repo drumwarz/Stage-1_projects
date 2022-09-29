@@ -409,6 +409,14 @@ text-transform: uppercase;
 color: #FFFFFF;
 display: block;
 margin: 0 auto;
+a {
+	font-weight: 500;
+	font-size: 15px;
+line-height: 1.15;
+text-align: center;
+text-transform: uppercase;
+color: #FFFFFF;
+}
 &:hover {
 			
 	background: linear-gradient(113.96deg, #f15512 1.49%, #f15512 101.44%);
