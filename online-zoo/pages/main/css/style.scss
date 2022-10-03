@@ -502,7 +502,7 @@ margin-bottom: 15px;
 }
 @media (max-width: 390px) {
 	padding: 105px 0 0 0;
-	height: 509px;
+	height: 507px;
 	}
 
 	// .backstage__container
@@ -697,7 +697,7 @@ position: absolute;
 }
 @media (max-width: 430px) {
 	right: -185px;
-	bottom: -140px;
+	bottom: -125px;
 	background: url("../img/flower_foto99999.png") no-repeat;
 	
 }
@@ -1415,6 +1415,10 @@ height: 54px;
 	width: 300px;
 	
 }
+@media (max-width: 639px) {
+	margin-left: -10px;
+	
+}
 
 
 
@@ -1532,9 +1536,9 @@ height: 54px;
 	}
 	&__arrow-gr1 {
 		display: block;
-		background: url("../img/arrow.png");
+		background: url("../img/arrow.png") no-repeat;
 		width: 69px;
-		height: 35px;
+		height: 38px;
 		margin-top: 57px;
 		@media (max-width: 1599px) {
 			margin-top: 61px;
@@ -1548,12 +1552,17 @@ height: 54px;
 		 background: url("../img/arrowgreen.png") no-repeat;
 			
 		}
+		@media (max-width: 639px) {
+			top: 125px;
+			left: 192px;
+			transform: rotate(85deg);
+			}
 	}
 	&__arrow-gr2 {
 		display: block;
-		background: url("../img/arrow.png");
+		background: url("../img/arrow.png")no-repeat ;
 		width: 69px;
-		height: 35px;
+		height: 38px;
 		margin-top: 57px;
 		@media (max-width: 1599px) {
 			margin-top: 61px;
@@ -1567,6 +1576,11 @@ height: 54px;
 		
 			background: url("../img/arrowgreen.png") no-repeat;
 		}
+		@media (max-width: 639px) {
+			top: 370px;
+			right: 0px;
+			transform: rotate(85deg);
+			}
 	}
 	// .items__item
 

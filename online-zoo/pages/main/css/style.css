@@ -571,7 +571,7 @@ body {
 @media (max-width: 390px) {
   .backstage {
     padding: 105px 0 0 0;
-    height: 509px;
+    height: 507px;
   }
 }
 .backstage__container {
@@ -754,7 +754,7 @@ body {
 @media (max-width: 430px) {
   .flower {
     right: -185px;
-    bottom: -140px;
+    bottom: -125px;
     background: url("../img/flower_foto99999.png") no-repeat;
   }
 }
@@ -1488,6 +1488,11 @@ body {
     width: 300px;
   }
 }
+@media (max-width: 639px) {
+  .pick__btn {
+    margin-left: -10px;
+  }
+}
 .pick__btn:hover {
   background: -o-linear-gradient(336.04deg, #f15512 1.49%, #f15512 101.44%);
   background: linear-gradient(113.96deg, #f15512 1.49%, #f15512 101.44%);
@@ -1602,9 +1607,9 @@ body {
 }
 .items__arrow-gr1 {
   display: block;
-  background: url("../img/arrow.png");
+  background: url("../img/arrow.png") no-repeat;
   width: 69px;
-  height: 35px;
+  height: 38px;
   margin-top: 57px;
 }
 @media (max-width: 1599px) {
@@ -1621,11 +1626,20 @@ body {
     background: url("../img/arrowgreen.png") no-repeat;
   }
 }
+@media (max-width: 639px) {
+  .items__arrow-gr1 {
+    top: 125px;
+    left: 192px;
+    -webkit-transform: rotate(85deg);
+        -ms-transform: rotate(85deg);
+            transform: rotate(85deg);
+  }
+}
 .items__arrow-gr2 {
   display: block;
-  background: url("../img/arrow.png");
+  background: url("../img/arrow.png") no-repeat;
   width: 69px;
-  height: 35px;
+  height: 38px;
   margin-top: 57px;
 }
 @media (max-width: 1599px) {
@@ -1640,6 +1654,15 @@ body {
     top: -78px;
     right: 150px;
     background: url("../img/arrowgreen.png") no-repeat;
+  }
+}
+@media (max-width: 639px) {
+  .items__arrow-gr2 {
+    top: 370px;
+    right: 0px;
+    -webkit-transform: rotate(85deg);
+        -ms-transform: rotate(85deg);
+            transform: rotate(85deg);
   }
 }
 .testimonials {
