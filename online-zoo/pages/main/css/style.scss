@@ -723,8 +723,11 @@ position: absolute;
 	// .animals__body
 
 	&__body {
-		margin: 0 0 140px 0;
+		margin: 0 0 100px 0;
 		position: relative;
+		@media (max-width: 1599px) {
+			margin: 0 0 140px 0;
+		}
 		@media (max-width: 999px) {
 			margin: 0 0 100px 0;
 		}
