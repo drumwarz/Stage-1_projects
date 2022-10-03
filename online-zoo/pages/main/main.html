@@ -27,12 +27,15 @@
 									<li class="menu__item"><a href="" class="menu__link">Zoos</a></li>
 									<li class="menu__item"><a href="../donate/donate.html" class="menu__link">Donate</a></li>
 									<li class="menu__item"><a href="" class="menu__link">Contact us</a></li>
+									<li class="menu__item_design"><a href="https://www.figma.com/file/ypzT9idgAILaSRVRmDAJxn/online-zoo-3-weeks" class="design__link">Designed by ©</a></li>						
 								</ul>
 							</nav>
 						</div>
 						<div class="header__design design">
 							<p class="design__title"><a href="https://www.figma.com/file/ypzT9idgAILaSRVRmDAJxn/online-zoo-3-weeks" class="design__link">Designed by ©</a></p>
-					  </div>							
+					  </div>	
+					  <div class="header__burger"></div>	
+					  <div class="overlay"></div>					
 				</div>
 			</header>
 			<main class="main">
@@ -47,7 +50,10 @@
 				</section>  
 				<section id="" class="backstage">
 					<div class="backstage__container">
+						<picture>
+							<source media="(max-width: 1599px)" srcset="img/bamboo-cap-smalldesk.jpg">
 						<img class="backstage__image" src="./img/bamboo-cap.jpg" alt="">
+					</picture>
 						<div class="backstage__body body">
 							<h2 class="body__title-main">The Backstage of the Wilderness World.</h2>
 							<p class="body__text-main">The site was founded on the basis of a volunteer movement to protect and care for animals.</p>
@@ -81,7 +87,7 @@
 										<div class="card__title">Eagles</div>
 										<div class="card__text">Native to South America</div>
 										</div>
-										<img class="card__icon" src="./img/meet-fish_icon.png" width="48px" alt="icon">
+										<img class="card__icon_meat" src="./img/meet-fish_icon.png"  alt="icon">
 									</div>
 									</div>
 									<div class="card__item">
@@ -111,7 +117,7 @@
 																<div class="card__title">Cheetahs</div>
 																<div class="card__text">Native to Africa</div>
 																</div>
-																<img class="card__icon" src="./img/meet-fish_icon.png" width="48px" alt="icon">
+																<img class="card__icon_meat" src="./img/meet-fish_icon.png"  alt="icon">
 															</div>
 															</div>
 															<div class="card__item">
@@ -121,18 +127,24 @@
 																		<div class="card__title">Penguins</div>
 																		<div class="card__text">Native to Antarctica</div>
 																		</div>
-																		<img class="card__icon" src="./img/meet-fish_icon.png" width="48px" alt="icon">
+																		<img class="card__icon_meat" src="./img/meet-fish_icon.png"  alt="icon">
 																	</div>
 																	</div>
+																	<div class="card__item">
+																		<img class="card__img" src="./img/alligator.jpg" alt="item">
+																		<div class="card__bottom">
+																			<div class="card__body_fish">
+																					<div class="card__title">Alligators</div>
+																					<div class="card__text">Native to Southeastern U.S.</div>
+																					</div>
+																					<img class="card__icon_meat" src="./img/meet-fish_icon.png"  alt="icon">
+																				</div>
+																				</div>
 																</div>
 																<button class="animals__button"  type="submit"> <a href="#map"> choose your favorite</a></button>
 										            </div>	
-														
-														<div class="flower-left"></div>
-														<div class="flower-right"></div>
 										   </div>		
 					</section>
-
 					<section class="pick">
 						<div class="pick__container">
 							<div class="pick__body">
@@ -150,14 +162,14 @@
 									</div>
 										<p class="items__text">Pay with card</p>
 								  </li>
-								  <li class="items__arrow"></li>
+								  <li class="items__arrow-gr1"></li>								  
 								  <li class="items__item">
 									<div class="items__image_zoo">
 										<img class="items__img_zoo" src="./img/zoo.svg" alt="">
 									</div>
 									<p class="items__text">Payment goes to the zoo</p>
 							  </li>
-								  <li class="items__arrow"></li>
+								  <li class="items__arrow-gr2"></li>
 								  <li class="items__item">
 									<div class="items__image_monkey">
 										<img class="items__img_monkey" src="./img/monkey.svg" alt="">  
@@ -169,7 +181,9 @@
 								  <button class="pick__btn">FEED A FRIEND NOW</button>
 							 </form>
 							</div>
+
 						</div>
+
 				  </section>
 				  <section class="testimonials">
 					<div class="testimonials__container">	
@@ -199,7 +213,7 @@
 								<!-- Контент -->
 								<div class="item-testimonials">
 									<div class="item-testimonials__body">
-										<img class="item-testimonials__icon" src="./img/oskar_icon.svg" alt="">
+										<img class="item-testimonials__icon" media="(max-width: 1599px)" src="./img/mila_icon.svg" alt="">
 									
 									<div class="item-testimonials__title">Oskar Samborsky
 										<span class="item-testimonials__subtitle">Local Austria • Yesterday</span>
@@ -264,6 +278,7 @@
 						<div class="footer__container">
 							<div class="footer__body">
 							 <div class="footer__contacts">
+								<div class="footer__resp">
 								  <a class="footer__logo logotip" href="#">
 										<div class="logotip__text">PetStory online</div>
 										<img class="logotip__img" src="./img/bamboo.svg" alt="bamboo">
@@ -271,6 +286,7 @@
 								  <a href="../donate/donate.html" class="footer__button">
 										<button class="footer__btn">DONATE FOR VOLONTEERS</button>
 								  </a>
+								</div>
 								  <ul class="media">
 									<li><a href="https://facebook.com/" class="media__link media__fb">Facebook</a></li>
 									<li><a href="https://twitter.com/" class="media__link media__tw">Twitter</a></li>
@@ -278,6 +294,7 @@
 									<li><a href="https://www.youtube.com/" class="media__link media__yt">YouTube</a></li>
 							  </ul>
 							 </div>
+							 <div class="footer__nav-resp">
 							 <nav class="footer__navigation nav">
 								  <ul class="nav__menu">
 										<li class="nav__li_about"><a href="#" class="nav__about">About</a></li>
@@ -297,7 +314,13 @@
 										<p>©RSSchool &amp; ©Yem Digital 2021</p>
 								  </div>
 							 </div>
+							 <div class="footer__design_resp">
+								<p class="footer__text">Designed by Alisa Samborskaya</p>
+								<p>©RSSchool &amp; ©Yem Digital 2021</p>
+						  </div>
+						</div>
 							</div>
+
 						</div>
 				  </footer>
 			  </div>
