@@ -763,8 +763,13 @@ body {
   position: relative;
 }
 .animals__body {
-  margin: 0 0 140px 0;
+  margin: 0 0 100px 0;
   position: relative;
+}
+@media (max-width: 1599px) {
+  .animals__body {
+    margin: 0 0 140px 0;
+  }
 }
 @media (max-width: 999px) {
   .animals__body {
