@@ -324,8 +324,9 @@ body {
 @media (max-width: 639px){
     height: 222px;
     background-size: 240%;
-    background-position: 33% 40%;
+    background-position: 33% 99%;
 }
+
 
 	}
 
@@ -343,6 +344,9 @@ body {
 		// .pick__title
 		@media (max-width: 1599px){
     height: 1333px;
+}
+@media (max-width: 639px){
+	height: 1148px;
 }
     &____container{
 
@@ -395,6 +399,11 @@ body {
 	 @media (max-width: 1599px){
     margin-bottom: 35px;
 }
+@media (max-width: 639px){
+    font-size: 24px;
+    margin-bottom: 29px;
+	 margin-left: px;
+}
 		}
 
 }
@@ -414,6 +423,10 @@ body {
 		height: 915px;
 
   }
+  @media (max-width: 639px){
+	height: 590px;
+
+}
 		// .donate__title
 
 		&__title {
@@ -433,6 +446,12 @@ body {
     margin-left: 5px;
 	 margin-top: 8px;
 }
+@media (max-width: 639px){
+    font-size: 24px;
+    margin-bottom: 10px;
+	 margin-top: 2px;
+	 margin-left: 8px;
+}
 		}
 
 		// .donate__text
@@ -449,6 +468,11 @@ body {
 @media (max-width: 999px){
 	margin-bottom: 95px;
 }
+@media (max-width: 639px){
+    font-size: 16px;
+    line-height: 140%;
+    margin-bottom: 45px;
+}
 		}
 
 		// .donate__logo
@@ -458,7 +482,9 @@ body {
     justify-content: center;
     align-items: center;
     margin-bottom: 48px;
-
+	 @media (max-width: 639px){
+		  margin-bottom: 7px;
+	 }
 		}
 
 		// .donate__number
@@ -471,6 +497,11 @@ body {
 			color: #333B41;
 			padding-right: 50px;
 			padding-top: 10px;
+			@media (max-width: 639px){
+    font-size: 9px;
+    padding: 0;
+    width: 100px;
+}
 			&::before {
 				display: block;
 				content: '4';
@@ -481,6 +512,10 @@ body {
 				text-transform: uppercase;
 				color: #000000;
 				margin-bottom: 11px;
+				@media (max-width: 639px){
+    font-size: 40px;
+    margin-bottom: 8px;
+}
 		  }
 		}
 
@@ -492,6 +527,11 @@ body {
     margin-left: -40px;
     padding-bottom: 15px;
     font-size: 20px;
+	 @media (max-width: 639px){
+    margin: 0;
+    font-size: 12px;
+    margin-right: 25px;
+}
 		}
 
 		// .donate__img
@@ -502,6 +542,13 @@ body {
 			height: 246px;
 			margin-top: -45px;
 			margin-right: 15px;
+			@media (max-width: 639px){
+    width: 180px;
+    height: 140px;
+    background-size: 180px 140px;
+    margin-top: -39px;
+    margin-right: 0;
+}
 		}
 
 		// .donate__amount
@@ -515,12 +562,20 @@ body {
     margin-left: 10px;
     margin-bottom: 7px;
 }
+@media (max-width: 639px){
+    margin-left: 0;
+    margin-bottom: 12px;
+}
 		}
 
 		// .donate__text-2
 		&__text-2 {
 			margin: 0 auto;
     text-align: center;
+	 @media (max-width: 639px){
+    width: 302px;
+    text-align: start;
+}
 		}
 
 }
@@ -538,6 +593,10 @@ body {
 }
 @media (max-width: 999px) {
     width: 600px;
+}
+@media (max-width: 639px){
+    width: 300px;
+    height: 13px;
 }
 }
 .input-range {
@@ -601,6 +660,9 @@ height: 10px;
 			 flex-direction: column;
 			 align-items: center;
 		}
+		@media (max-width: 639px){
+    margin-bottom: 23px;
+}
 		&__dots {
 			position: relative;
 		}
@@ -623,6 +685,10 @@ height: 10px;
 }
 @media (max-width: 999px){
     width: 560px;
+}
+@media (max-width: 639px){
+    width: 300px;
+    margin-top: -27px;
 }
 
 		}
@@ -653,12 +719,16 @@ height: 10px;
 			&_active {
 				background: url("../img/Group\ 11.png") center no-repeat;
 		
+				@media (max-width: 639px){
+					background: url("../img/roller_icon.svg") center no-repeat;
+}
 		}
 	  }
 			// .pay__dot_active
 
 			&_active {
 				background: url("../img/circle.svg");
+
 		  }
 
 		// .pay__circle
@@ -669,11 +739,20 @@ height: 10px;
 			width: 10px;
 			height: 10px;
 			cursor: pointer;
+			
+@media (max-width: 639px){
+    width: 5px;
+    height: 5px;
+}
 			&:hover {
 				width: 20px;
 				height: 20px;
 			
 				transition: all 0.0s ease 0s;
+				@media (max-width: 639px){
+					width: 5px;
+					height: 5px;
+			  }
 			}
 		}
 
@@ -684,6 +763,10 @@ height: 10px;
 				margin-top: -5px;
 				margin-left: -3px;
 		  }
+		  @media (max-width: 639px){
+			margin-top: 3px;
+			margin-left: -3px;
+	  }
 		}
 
 		// .pay__dollars-ul
@@ -706,6 +789,11 @@ height: 10px;
 @media (max-width: 999px){
     width: 570px;
     grid-template-columns: 130px 130px 130px 130px 60px;
+}
+@media (max-width: 639px){
+    width: 290px;
+    margin-top: -7px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 0.4fr;
 }
 		}
 
@@ -732,6 +820,9 @@ height: 10px;
 			}
 			
 		}
+		@media (max-width: 639px) {
+    font-size: 13px;
+}
 			&_active {
 				
 					color: #FE9013;
@@ -761,6 +852,11 @@ height: 10px;
     width: 180px;
     height: 42px;
     margin-bottom: 32px;
+}
+@media (max-width: 639px){
+	width: 180px;
+	height: 42px;
+	margin-bottom: 25px;
 }
 		}
 
