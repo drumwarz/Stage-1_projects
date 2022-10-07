@@ -1329,7 +1329,7 @@ input[type=range]::-moz-range-track {
 }
 @media (max-width: 1599px) {
   .footer__design {
-    margin-right: -15px;
+    margin-right: -30px;
     margin-top: 220px;
   }
 }
