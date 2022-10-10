@@ -41,34 +41,34 @@ input.addEventListener('input', () => {
 console.log(cardsBlock)
 console.log(input)
 
-// Попап при нажатии на отзыв в блоке Testimonials
 
-// const card = document.querySelectorAll('.testimonials__card');
-// const cardText = document.querySelectorAll('.testimonials__text');
-// const cardBlock = document.querySelector('.testimonials__card_block');
-// const close2 = document.querySelector('.close-2');
-// for (let i = 0; i < card.length; i++) {
-//     card[i].addEventListener('click', () => {
-//         cardBlock.classList.toggle('testimonials__card_block-active');
-//         card[i].classList.toggle('testimonials__card_active');
-//         overlay.classList.toggle('overlay_active');
-//         cardText[i].classList.toggle('testimonials__text_active');
-//     })
-//     overlay.addEventListener('click', () => {
-//         cardBlock.classList.remove('testimonials__card_block-active')
-//         overlay.classList.remove('overlay_active');
-//         card[i].classList.remove('testimonials__card_active');
-//         cardText[i].classList.remove('testimonials__text_active');
-//     })
-//     close2.addEventListener('click', () => {
-//         cardBlock.classList.remove('testimonials__card_block-active')
-//         overlay.classList.remove('overlay_active');
-//         card[i].classList.remove('testimonials__card_active');
-//         cardText[i].classList.remove('testimonials__text_active');
-//     })
-// }
 
-//Карусель в блоке Pets
+const card = document.querySelectorAll('.testimonials__item');
+const cardText = document.querySelectorAll('.item-testimonials__text');
+const cardBlock = document.querySelector('.testimonials__crdblock');
+const close2 = document.querySelector('.close-3');
+for (let i = 0; i < card.length; i++) {
+    card[i].addEventListener('click', () => {
+        cardBlock.classList.toggle('testimonials__crdblock-active');
+        card[i].classList.toggle('testimonials__item_active');
+        overlay.classList.toggle('overlay_active');
+        cardText[i].classList.toggle('item-testimonials__text_active');
+    })
+    overlay.addEventListener('click', () => {
+        cardBlock.classList.remove('testimonials__crdblock-active')
+        overlay.classList.remove('overlay_active');
+        card[i].classList.remove('testimonials__item_active');
+        cardText[i].classList.remove('item-testimonials__text_active');
+    })
+    close2.addEventListener('click', () => {
+        cardBlock.classList.remove('testimonials__crdblock-active')
+        overlay.classList.remove('overlay_active');
+        card[i].classList.remove('testimonials__item_active');
+        cardText[i].classList.remove('item-testimonials__text_active');
+    })
+}
+
+// Pets
 
 let viewport = document.querySelector('.card__wrap').offsetWidth;
 let block = document.querySelector('.card__wrap');
