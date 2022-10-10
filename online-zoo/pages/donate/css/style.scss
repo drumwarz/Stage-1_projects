@@ -260,6 +260,7 @@ body {
 		 font-weight: 500;
 		 font-size: 16px;
 		 line-height: 140%;
+		
 	 }
 	 &_design {
 		 
@@ -292,10 +293,17 @@ body {
  &__link {
 	 color: #FFFFFF;
 	 &_about {
-		 color: #F9804B;
+		color: #FFFFFF;
+		&:hover {
+			color: #F9804B;
+		}
+	 }
+	 &_donate {
+		color: #F9804B;
 	 }
 	 &:hover {
 		 color: #F9804B;
+		 transform: scale(1.1);
 	 }
  }
  &__close {
@@ -1147,7 +1155,7 @@ padding: 0 30px;
 font-size: 15px;
 line-height: 1.15;
 /* or 22px */
-
+cursor: pointer;
 text-align: center;
 text-transform: uppercase;
 margin-bottom: 49px;

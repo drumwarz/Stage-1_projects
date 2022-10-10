@@ -351,10 +351,19 @@ body {
   color: #FFFFFF;
 }
 .menu__link_about {
+  color: #FFFFFF;
+}
+.menu__link_about:hover {
+  color: #F9804B;
+}
+.menu__link_donate {
   color: #F9804B;
 }
 .menu__link:hover {
   color: #F9804B;
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
 }
 @media (max-width: 999px) {
   .menu__close {
@@ -1277,6 +1286,7 @@ input[type=range]::-moz-range-track {
   font-size: 15px;
   line-height: 1.15;
   /* or 22px */
+  cursor: pointer;
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 49px;
