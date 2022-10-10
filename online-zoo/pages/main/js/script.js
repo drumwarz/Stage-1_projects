@@ -1,7 +1,7 @@
 const btnBurger = document.querySelector('.header__burger'),
       burger = document.querySelector('.menu__body'),
-      overlay = document.querySelector('.overlay')
-
+      overlay = document.querySelector('.overlay'),
+      close = document.querySelector('.menu__close');
 btnBurger.addEventListener('click', () => {
     burger.classList.add('menu__body_active');
     overlay.classList.add('overlay_active');
@@ -12,3 +12,197 @@ overlay.addEventListener('click', () => {
 })
 
 
+close.addEventListener('click', () => {
+     burger.classList.remove('menu__body_active');
+     overlay.classList.remove('overlay_active');
+ })
+
+
+
+
+
+
+
+
+
+// Слайдер в блоке Testimonials
+
+const input = document.querySelector('.testimonials__scroll');
+const cardsBlock = document.querySelector('.testimonials__items');
+cardsBlock.style.marginLeft = 0;
+input.addEventListener('input', () => {
+    let target = input.value * 25.6
+    if (window.innerWidth < 1600) {
+        target = input.value * 34.2;
+    }
+    cardsBlock.style.marginLeft = -target + '%';
+})
+
+console.log(cardsBlock)
+console.log(input)
+
+// Попап при нажатии на отзыв в блоке Testimonials
+
+// const card = document.querySelectorAll('.testimonials__card');
+// const cardText = document.querySelectorAll('.testimonials__text');
+// const cardBlock = document.querySelector('.testimonials__card_block');
+// const close2 = document.querySelector('.close-2');
+// for (let i = 0; i < card.length; i++) {
+//     card[i].addEventListener('click', () => {
+//         cardBlock.classList.toggle('testimonials__card_block-active');
+//         card[i].classList.toggle('testimonials__card_active');
+//         overlay.classList.toggle('overlay_active');
+//         cardText[i].classList.toggle('testimonials__text_active');
+//     })
+//     overlay.addEventListener('click', () => {
+//         cardBlock.classList.remove('testimonials__card_block-active')
+//         overlay.classList.remove('overlay_active');
+//         card[i].classList.remove('testimonials__card_active');
+//         cardText[i].classList.remove('testimonials__text_active');
+//     })
+//     close2.addEventListener('click', () => {
+//         cardBlock.classList.remove('testimonials__card_block-active')
+//         overlay.classList.remove('overlay_active');
+//         card[i].classList.remove('testimonials__card_active');
+//         cardText[i].classList.remove('testimonials__text_active');
+//     })
+// }
+
+//Карусель в блоке Pets
+
+let viewport = document.querySelector('.card__wrap').offsetWidth;
+let block = document.querySelector('.card__wrap');
+let btnNext = document.querySelector('.card__arrow-right');
+let btnPrev = document.querySelector('.card__arrow-left');
+let slides = document.querySelectorAll('.card__items');
+let slider = [];
+
+for (let i = 0; i < slides.length; i++) {
+  slides[i].innerHTMl = '';
+  [...slides[i].children].sort(() => Math.random() - 0.5).forEach(v => slides[i].append(v));
+  slider[i] = slides[i];
+  slides[i].remove();
+}
+let step = 0;
+let offset = 0;
+
+function drow() {
+  let ul = document.createElement('ul');
+
+  ul = slider[slider.length-1];
+  ul.classList.add('table');
+  ul.style.left = -viewport + 'px';
+  document.querySelector('.card__wrap').appendChild(ul); 
+  
+  ul = slider[step];
+  ul.classList.add('card__items');
+  ul.style.left = offset * viewport + 'px';
+  document.querySelector('.card__wrap').appendChild(ul);
+
+  ul = slider[step+1];
+  ul.classList.add('card__items');
+  ul.style.left = offset * viewport + viewport + 'px';
+  document.querySelector('.card__wrap').appendChild(ul); 
+
+  offset = 1;
+}
+
+function drowL() {
+  if (step == (slider.length - 1)) {
+    step = 1;
+  } else {
+    if (step == (slider.length - 2)) {
+      step = 0;
+    } else {
+      step = (step + 2);
+    }
+  }
+  let ul = document.createElement('ul');
+  ul = slider[step];
+  ul.classList.add('card__items');
+  ul.style.left = offset * viewport + 'px';
+  document.querySelector('.card__wrap').appendChild(ul); 
+    
+  if (step == 0) {
+    step = (slider.length - 1);
+  } else {
+    step = (step - 1);
+  }
+
+  offset = 1;
+
+  ul.innerHTMl = '';
+  [...ul.children].sort(() => Math.random() - 0.5).forEach(v => ul.append(v));
+}
+function left() {
+  btnNext.removeEventListener('click', left);
+
+  let slider2 = document.querySelectorAll('.card__items');
+  let offset2 = -1;
+  for (let i = 0; i < slider2.length; i++) {
+    slider2[i].style.left = offset2 * viewport - viewport + 'px';
+    offset2++;
+  }
+  setTimeout(function() {
+    slider2[0].remove();
+    drowL();
+    btnNext.addEventListener('click', left)
+  }, 500);
+
+  slider2[2].innerHTMl = '';
+  [...slider2[2].children].sort(() => Math.random() - 0.5).forEach(v => slider2[2].append(v));
+}
+
+function drowR() {
+  if (step == 0) {
+    step = (slider.length - 2);
+  } else {
+    if (step == 1) {
+      step = (slider.length  -1);
+    } else {
+      step = (step - 2);
+    }
+  }
+  let offset = -1;
+  let ul = document.createElement('ul');
+  ul = slider[step];
+  ul.classList.add('card__items');
+  ul.style.left = offset * viewport + 'px';
+
+  document.querySelector('.card__wrap').insertBefore(ul, block.firstElementChild);
+
+  if (step == (slider.length-1)) {
+      step = 0;
+   } else {
+     step = (step + 1);
+   }
+  offset = 1;
+
+  ul.innerHTMl = '';
+  [...ul.children].sort(() => Math.random() - 0.5).forEach(v => ul.append(v));
+};
+function right() {
+  btnPrev.removeEventListener('click', right);
+  
+  let slider2 = document.querySelectorAll('.card__items');
+  let offset2 = (slider2.length - 1);
+ 
+  for (let i = (slider2.length-1); i >= 0; i--) {
+    slider2[i].style.left = offset2 * viewport + 'px';
+    offset2 --;
+  }
+  setTimeout(function() {
+    slider2[(slider2.length-1)].remove();
+    drowR();
+    btnPrev.addEventListener('click', right);
+  }, 500);
+
+  slider2[0].innerHTMl = '';
+  [...slider2[0].children].sort(() => Math.random() - 0.5).forEach(v => slider2[0].append(v));
+}
+
+drow();
+step = 0;
+
+btnNext.addEventListener('click', left);
+btnPrev.addEventListener('click', right);
