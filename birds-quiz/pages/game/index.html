@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dota Voice Quiz</title>
+  <link rel="stylesheet" href="../../assets/styles/normalize.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="../../assets/icons/favicon.ico" type="image/x-icon">  
+</head>
+<body class="body">
+  <main class="main">
+    <section class="logo" onclick="window.location.href = '../../index.html';">
+        <span class="logo_icon"></span>
+        <h1 class="logo_h1">Birds Voice Quiz</h1>
+    </section>
+    <section class="game">
+      <div class="game_stages">
+        <div class="stage stage_first"><p class="stage_text stage_carry">Warm-up</p></div>
+        <div class="stage"><p class="stage_text stage_mid">Sparrows</p></div>
+        <div class="stage"><p class="stage_text stage_hard">Forest Birds</p></div>
+        <div class="stage"><p class="stage_text stage_soft">Song Birds</p></div>
+        <div class="stage"><p class="stage_text stage_support">Birds of prey</p></div>
+        <div class="stage stage_last"><p class="stage_text stage_ti">Sea Birds</p></div>
+      </div>
+      <div class="game_field">
+        <div class="player">
+          <div class="image">
+            <div class="image_wrap">
+              <img class="bird_image" src="../../assets/icons/bird.jpg" alt="bird">
+            </div>
+          </div>
+          <div class="bird_des">
+            <p class="bird_name">* * * * * *</p>
+            <div class="score_wrap">
+              <p class="score">Score:</p>
+              <span class="score_number">0</span>
+            </div>
+            <div class="audio">
+              <span class="audio_play audio_play_predict"></span>
+              <div class="timeline timeline_predict">
+                <input type="range" class="range_timeline range_timeline_predict" min="0" max="100" value="0" name="range" step="1">   
+                <span class="current_time current_time_predict">00:00</span>
+                <span class="max_time max_time_predict">00:00</span>
+              </div>
+              <div class="volume_wrap volume_wrap_predict">
+                <span class="volume volume_predict"></span>
+                <div class="volume_bar_wrap volume_bar_wrap_predict">
+                  <div class="volume_bar_field volume_bar_field_predict">
+                    <input type="range" class="volume_bar volume_bar_predict" min="0" max="100" value="50" name="range" step="1">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="selection">
+          <ul class="selection_ul">
+            <li class="option option_1 option_first">
+              <span class="option_dot"></span>
+              <p class="option_text"></p>
+            </li>
+            <li class="option option_2">
+              <span class="option_dot"></span>
+              <p class="option_text"></p>
+            </li>
+            <li class="option option_3">
+              <span class="option_dot"></span>
+              <p class="option_text"></p></li>
+            <li class="option option_4">
+              <span class="option_dot"></span>
+              <p class="option_text"></p>
+            </li>
+            <li class="option option_5">
+              <span class="option_dot"></span>
+              <p class="option_text"></p>
+            </li>
+            <li class="option option_6 option_last">
+              <span class="option_dot"></span>
+              <p class="option_text"></p>
+            </li>
+          </ul>
+        </div>
+        <div class="info">
+          <div class="info_play_wrap">
+            <p class="info_play">Listen to the birds voice. Try to choose the right bird in the list.</p>
+          </div>
+          <div class="info_wrap">
+            <div class="info_image">
+              <div class="info_image_wrap">
+                <img class="info_bird_image" alt="bird" src="../../assets/icons/bird.jpg">
+              </div>
+            </div>
+            <div class="info_bird_des">
+              <p class="info_bird_name">* * * * * *</p>
+              <div class="info_audio">
+                <span class="audio_play audio_play_info"></span>
+                <div class="timeline timeline">
+                  <input type="range" class="range_timeline range_timeline_info" min="0" max="100" value="0" name="range" step="1">   
+                  <span class="current_time current_time_info">00:00</span>
+                  <span class="max_time max_time_info">00:00</span>
+                </div>
+                <div class="volume_wrap volume_wrap_info">
+                  <span class="volume volume_info"></span>
+                  <div class="volume_bar_wrap volume_bar_wrap_info">
+                    <div class="volume_bar_field volume_bar_field_info">
+                      <input type="range" class="volume_bar volume_bar_info" min="0" max="100" value="50" name="range" step="1">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="info_text_wrap">
+              <p class="info_text">Послушайте голос птицы. Попробуйте определить кому он принадлежит.</p>
+            </div>
+            <div class="button_wrap">
+              <button class="button_next">Next stage</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer_developer">
+      <a class="footer_link" href="https://github.com/drumwarz">
+        <span class="footer_github"></span>
+        <p class="footer_year">@Drum Warz 2022</p>
+      </a> 
+    </div>
+    <a class="rsschool_wrap" href="https://rs.school/js/"><span class="footer_rsschool"></span></a>
+  </footer>
+  <section class="end_popup">
+    <div class="popup">
+      <img class="popup_img" src="../../assets/icons/pngwing.com.png" alt="gg">
+      <p class="popup_text"></p>
+      <button class="popup_button" onclick="window.location.href = 'index.html';">Play again</button>
+      <button class="popup_button popup_home" onclick="window.location.href = '../../index.html';">Home</button>
+    </div>
+  </section>
+  <script src="../../assets/scripts/birds.js"></script>
+  <script src="../../assets/scripts/game.js"></script>
+  <script src="../../assets/scripts/language-game.js"></script>
+</body>
+</html>

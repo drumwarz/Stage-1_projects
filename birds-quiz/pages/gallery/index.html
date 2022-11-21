@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery</title>
+  <link rel="stylesheet" href="../../assets/styles/normalize.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="../../assets/icons/favicon.ico" type="image/x-icon">  
+</head>
+<body class="body">
+  <section class="logo" onclick="window.location.href = '../../index.html';">
+        <span class="logo_icon"></span>
+        <h1 class="logo_h1">Birds Voice Quiz</h1>
+  </section>
+  <main class="main">
+    <section class="bird">
+      <p class="gallery_des">Click on the bird in the list below to see information about her.</p>
+      <div class="info_wrap">
+        <div class="video">
+          <video autoplay loop muted preload="auto" playsinline class="bird_video" id="bird_video">
+          </video>
+        </div>
+        <div class="info">
+          <div class="info_image">
+            <div class="info_image_wrap">
+              <img class="info_bird_image" alt="bird" src="/birds/assets/icons/bird.jpg">
+            </div>
+          </div>
+          <p class="info_bird_name">jherjeje</p>
+          <p class="info_bird_category"></p>
+          <div class="info_audio">
+            <span class="audio_play aud"></span>
+            <div class="timeline timeline">
+              <input type="range" class="range_timeline" min="0" max="100" value="0" name="range" step="1">   
+              <span class="current_time">00:00</span>
+              <span class="max_time">00:00</span>
+            </div>
+            <div class="volume_wrap">
+              <span class="volume"></span>
+              <div class="volume_bar_wrap">
+                <div class="volume_bar_field">
+                  <input type="range" class="volume_bar" min="0" max="100" value="50" name="range" step="1">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="info_text_wrap">
+            <p class="info_text"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="pictures">
+      <p class="pictures_text">Birds:</p>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer_developer">
+      <a class="footer_link" href="https://github.com/drumwarz">
+        <span class="footer_github"></span>
+        <p class="footer_year">@Drum Warz 2022</p>
+      </a> 
+    </div>
+    <a class="rsschool_wrap" href="https://rs.school/js/"><span class="footer_rsschool"></span></a>
+  </footer>
+  
+  <script src="../../assets/scripts/birds.js"></script>
+  <script src="../../assets/scripts/gallery.js"></script>
+</body>
+</html>

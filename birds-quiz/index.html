@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="assets/styles/normalize.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon">  
+</head>
+<body class="body">
+  <main class="main">
+    <div class="background">
+       <img class="background-img" src="./assets/images/phantom.jpg" alt="background">
+    </div>
+    <section class="logo" onclick="window.location.href = 'index.html';">
+        <span class="logo_icon"></span>
+        <h1 class="logo_h1">Birds Voice Quiz</h1>
+    </section>
+    <div class="language">
+      <span class="language_text">Language</span>
+      <span class="language_pic"></span>
+    </div>
+    <section class="description">
+      <p class="description_text">A game in which you have to guess the birds by their voice.</p>
+    </section>
+    <button class="button play" onclick="window.location.href = 'pages/game/index.html';">Play</button>
+    <button class="button gallery" onclick="window.location.href = 'pages/gallery/index.html';">Gallery</button>
+  </main>
+  <footer class="footer">
+    <div class="footer_developer">
+      <a class="footer_link" href="https://github.com/drumwarz">
+        <span class="footer_github"></span>
+        <p class="footer_year">@Drum Warz 2022</p>
+      </a> 
+    </div>
+    <a class="rsschool_wrap" href="https://rs.school/js/"><span class="footer_rsschool"></span></a>
+  </footer>
+  <script src="assets/scripts/main-page.js"></script>
+</body>
+</html>
