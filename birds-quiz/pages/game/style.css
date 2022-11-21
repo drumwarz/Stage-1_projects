@@ -1,0 +1,914 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:regular,500,600,700,800,900,italic,500italic,600italic,700italic,800italic,900italic');
+ html{
+	min-height: 860px;
+	height: 100vh;
+ }
+ 
+ .body {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: url("/birds/assets/images/phantom.jpg") 0 0/cover ;
+
+ }
+ 
+ .page_link {
+	text-decoration: none;
+ }
+ 
+ .logo {
+	position: relative;
+	width: 670px;
+	margin-left: 40px;
+	padding: 20px 0 0 0px;
+	z-index: 1;
+	display: flex;
+	gap: 30px;
+	opacity: 0.9;
+	transition: 0.5s;
+	z-index: 1;
+	cursor: pointer;
+ }
+ 
+ .logo_icon {
+	display: inline-block;
+	background-image: url("/birds/assets/icons/logo.4f82cd73.svg");
+	background-repeat: no-repeat;
+	height: 130px;
+	width: 780px;
+	background-size: cover;
+	cursor: pointer;
+ }
+ 
+ .logo:hover {
+	opacity: 1;
+ }
+ 
+ .logo_h1{
+	text-decoration: none;
+	margin: 0;
+	font-family: "Playfair Display", sans-serif;
+	color: white;
+	font-size: 30px;
+	text-transform: uppercase;
+	cursor: pointer;
+	
+ }
+ 
+ .footer {
+	position: absolute;
+	bottom: 0px;
+	left: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	padding: 0px 40px 0px 40px;
+	flex-wrap: wrap;
+ }
+ 
+ .footer_year {
+	font-size: 16px;
+	font-family: "Playfair Display", sans-serif;
+	color: white;
+ }
+ 
+ .footer_github {
+	display: inline-block;
+	background-image: url("../../assets/icons/github.svg");
+	background-repeat: no-repeat;
+	height: 40px;
+	width: 40px;
+	background-size: cover;
+	transition: 0.5s;
+ }
+ 
+ .footer_link {
+	text-decoration: none;
+	display: flex;
+	gap: 15px;
+	transition: 0.5s;
+	opacity: 0.5;
+ }
+ 
+ .footer_rsschool {
+	display: inline-block;
+	background-image: url("../../assets/icons/rsschool.svg");
+	background-repeat: no-repeat;
+	height: 60px;
+	width: 162px;
+	background-size: cover;
+	opacity: 0.5;
+	transition: 0.5s;
+ }
+ 
+ .footer_link:hover,
+ .footer_rsschool:hover {
+	opacity: 1;
+	transform: scale(1.05);
+ }
+ 
+ .game {
+	width: calc(100% - 80px);
+	margin: 13px auto 0 auto;
+	max-width: 1440px;
+ }
+ 
+ .game_stages {
+	margin: auto;
+	width: calc(100% - 15px);
+	display: flex;
+	
+	border: 1px solid white;
+
+	background-color: #0075528f;
+ }
+ 
+ .stage {
+	height: 50px;
+	width: calc((100%/6));
+
+	border-radius: 0;
+	display : flex;
+	align-items : center;
+	border-left: none;
+	opacity: 0.8;
+ }
+ 
+ .stage_active {
+	
+	background-color: #019c6e;
+	border: 2px solid white;
+	border-top: none;
+	border-bottom: none;
+	opacity: 1;
+ }
+ 
+ .stage_first {
+	border-left: none;
+
+ }
+ 
+ .stage_last {
+	border-top-right-radius: 7px;
+	border-bottom-right-radius: 7px;
+	border-right: none;
+ }
+ 
+ .stage_text {
+	margin: auto;
+	color: white;
+	font-family: "Playfair Display", sans-serif;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 19px;
+	vertical-align: middle;
+	padding-bottom: 3px;
+	
+ }
+ 
+ .game_field {
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	min-height: 560px;
+	height: calc(100vh - 300px);
+	width: 100%;
+	margin-top: 15px;
+	display: flex;
+	flex-wrap: wrap;
+ }
+ 
+ .phantom {
+	background-image: url("/birds/assets/images/phantom.jpg");
+	
+ }
+ 
+ .queen {
+	background-image: url("/birds/assets/images/phantom.jpg");
+ }
+ 
+ .tide {
+	background-image: url("/birds/assets/images/phantom.jpg");
+ }
+ 
+ .rubick {
+	background-image: url("/birds/assets/images/phantom.jpg");
+ }
+ 
+ .cm {
+	background-image: url("/birds/assets/images/phantom.jpg");
+ }
+ 
+ .back {
+	background-image: url("/birds/assets/images/phantom.jpg");
+ }
+ 
+ .player {
+	width: 100%;
+	height: 25%;
+	border: 1px solid white;
+	
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+	border-bottom: none;
+	display: flex;
+	align-items: center;
+	padding-left: 40px;
+	padding-right: 40px;
+ }
+ 
+ .image {
+	width: 160px;
+ }
+ 
+ .image_wrap {
+	width: 110px;
+	height: 110px;
+	
+	
+	
+ }
+ 
+ .bird_image {
+
+	width: 116px;
+	height: 116px;
+ }
+ 
+ .bird_des {
+	display: flex;
+	flex-wrap: wrap;
+	width: calc(100% - 160px);
+ }
+ 
+ .score_wrap {
+	display: flex;
+ }
+ 
+ .bird_name,
+ .score,
+ .score_number {
+	font-family: "Playfair Display", sans-serif;
+	text-transform: uppercase;
+	color: white;
+	font-size: 25px;
+	margin: 0;
+	margin-bottom: 25px;
+
+ }
+ 
+ .score_number {
+	margin-left: 5px;
+ }
+ 
+ .bird_name {
+	flex: 1;
+ }
+ 
+ .selection {
+	border: 1px solid white;
+	border-radius: 0;
+	
+	width: 35%;
+	height: 75%;
+ }
+ 
+ .selection_ul {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+ }
+ 
+ .option {
+	width: 100%;
+	height: calc(100%/6);
+	list-style: none;
+	border-top: 2px solid white;
+	cursor: pointer;
+	display: flex;
+	align-items : center;
+ }
+ 
+ .option_first {
+	border: none;
+ }
+ 
+ .option_last {
+	border-bottom-left-radius: 8px;
+ }
+ 
+ .option:hover {
+	background: rgba(107, 73, 0, 0.705);
+ }
+ 
+ .option_dot {
+	display: block;
+	width: 28px;
+	height: 26px;
+	background-image: url("/birds/assets/icons/pngwing.com.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-left: 13px;
+ }
+ 
+ .dot_cross {
+	background-image: url("../../assets/icons/cross.svg");
+ }
+ 
+ .dot_mark {
+	background-image: url("../../assets/icons/mark.svg");
+ }
+ 
+ .option_text{
+	margin: 0;
+	font-family: "Playfair Display", sans-serif;
+	text-transform: uppercase;
+	color: white;
+	width: 78%;
+	font-size: 21px;
+
+	margin-left: 13px;
+ }
+ 
+ .info {
+	border: 1px solid white;
+	
+
+	border-left: none;
+	width: 65%;
+	height: 75%;
+	padding: 15px;
+ }
+ 
+ .info_wrap {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	flex-wrap: wrap;
+	display: none;
+ }
+ 
+ .info_wrap_active {
+	display: flex;
+ }
+ 
+ .info_play {
+	font-family: "Playfair Display", sans-serif;
+	text-transform: uppercase;
+	color: white;
+	font-size: 23px;
+	margin: 0;
+ }
+ 
+ .info_image {
+	width: 160px;
+	height: 120px;
+ }
+ 
+ .info_image_wrap {
+	width: 110px;
+	height: 110px;
+
+	
+	
+ }
+ 
+ .info_bird_image {
+	display: block;
+
+	width: 116px;
+	height: 116px;
+ }
+ 
+ .info_bird_des {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	width: calc(100% - 160px);
+	height: 120px;
+ }
+ 
+ .info_bird_name {
+	font-family: "Playfair Display", sans-serif;
+	text-transform: uppercase;
+	color: white;
+	font-size: 25px;
+	margin: 0;
+	
+	flex: 1;
+ }
+ 
+ .info_text_wrap {
+	margin: 10px 0;
+	width: 100%;
+	height: calc(87% - 140px);
+	overflow: auto;
+ }
+ 
+ .info_text_wrap::-webkit-scrollbar {
+	width: 5px;
+ }
+ 
+ .info_text_wrap::-webkit-scrollbar-thumb{
+	background: linear-gradient(180deg, rgba(190,42,44,1) 0%, rgba(192,66,43,1) 100%);
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+ }
+ 
+ .info_text {
+	margin: 0;
+	font-family: "Playfair Display", sans-serif;
+	color: white;
+	font-size: 22px;
+	margin-right: 5px;
+ }
+ 
+ .button_wrap {
+	width: 100%;
+	height: 13%;
+ }
+ 
+ .button_next {
+	display: block;
+	margin: auto;
+	background-color: transparent;
+	cursor: pointer;
+	font-family: "Playfair Display", sans-serif;
+	text-transform: uppercase;
+	color: white;
+	font-size: 20px;
+	height: 100%;
+	width: 80%;
+	border: 2px solid white;
+	border-radius: 10px;
+	
+	transition: 0.5s;
+	opacity: 0.3;
+	cursor: default;
+	background-color: #6C6C6C;
+ }
+ 
+ .button_next_active {
+	opacity: 1;
+	cursor: pointer;
+	background-color: transparent;
+ }
+ 
+ .button_next_active:hover {
+	transform: scale(1.05);
+	background: rgba(107, 73, 0, 0.705);
+ }
+ 
+ .info_audio,
+ .audio {
+	width: 100%;
+	height: 45px;
+	display: flex;
+	align-items: center;
+ }
+ 
+ .audio_play {
+	display: block;
+	background-image: url("../../assets/icons/play-button-white.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 45px;
+	height: 45px;
+	cursor: pointer;
+	margin-right: 10px;
+	transition: 0.5s;
+ }
+ 
+ .audio_pause {
+	background-image: url("../../assets/icons/pause.svg");
+ }
+ 
+ .timeline {
+	position: relative;
+	width: calc(100% - 110px);
+	margin-right: 10px;
+	height: 12px;
+ }
+ 
+ .range_timeline {
+	position: absolute;
+	width: 100%;
+	height: 12px;
+	top: -1px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background-color: white;
+	border-radius: 15px;
+	
+	overflow: hidden;
+	cursor: pointer;
+ }
+ 
+ .range_timeline::-webkit-slider-runnable-track{
+	background: none;
+ }
+ .range_timeline::-webkit-slider-thumb{
+	-webkit-appearance: none;
+	appearance: none;
+	background-color: black;
+	width: 0px;
+	height: 12px;
+	box-shadow: -800px 0 0 800px rgb(190,42,44);
+	cursor: pointer;
+ }
+ 
+ .range_timeline::-moz-range-track{
+	background: none;
+ }
+ 
+ .range_timeline::-moz-range-thumb{
+	-moz-appearance: none;
+	appearance: none;
+	width: 0px;
+	height: 12px;
+	box-shadow: -800px 0 0 800px rgb(190,42,44);
+	cursor: pointer;
+ }
+ 
+ .current_time,
+ .max_time {
+	position: absolute;
+	top: 15px;
+	font-family: "Playfair Display", sans-serif;
+	text-transform: uppercase;
+	color: white;
+	font-size: 12px;
+ }
+ 
+ .current_time {
+	left: 0;
+ }
+ 
+ .max_time {
+	right: 0;
+ }
+ 
+ .volume_wrap {
+	position: relative;
+ }
+ 
+ .volume {
+	position: relative;
+	display: block;
+	background-image: url("../../assets/icons/volume.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 45px;
+	height: 45px;
+	cursor: pointer;
+	transition: 0.5s;
+ }
+ 
+ .volume_off {
+	background-image: url("../../assets/icons/volume-off.svg");
+ }
+ 
+ .volume_bar_wrap {
+	position: absolute;
+	top: 45px;
+	left: 0;
+	height: 103px;
+	width: 45px;
+	display: none;
+ }
+ 
+ .volume_bar_field {
+	position: relative;
+	margin-top: 3px;
+	position: absolute;
+	width: 45px;
+	height: 100px;
+	border: 2px solid white;
+	border-radius: 10px;
+	background: black;
+ }
+ 
+ .volume_bar {
+	position: absolute;
+	top: 43px;
+	left: -19px;
+	transform: rotate(270deg);
+	width: 80px;
+	height: 9px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background-color: white;
+	border-radius: 15px;
+	overflow: hidden;
+	cursor: pointer;
+ }
+ 
+ .volume_bar::-webkit-slider-runnable-track {
+	background: none;
+ }
+ 
+ .volume_bar::-moz-range-track {
+	background: none;
+ }
+ 
+ .volume_bar::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	background-color: black;
+	width: 0px;
+	height: 12px;
+	box-shadow: -100px 0 0 100px rgb(190,42,44);
+	cursor: pointer;
+ }
+ 
+ .volume_bar::-moz-range-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	background-color: black;
+	width: 0px;
+	height: 12px;
+	box-shadow: -100px 0 0 100px rgb(190,42,44);
+	cursor: pointer;
+ }
+ 
+ .audio_play:hover,
+ .volume:hover {
+	transform: scale(1.05);
+ }
+ 
+ .end_popup {
+	background: url("/birds/assets/images/phantom.jpg") 0 0/cover ;
+	position: fixed;
+	z-index: 5;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: none;
+ }
+ 
+ .popup {
+	border: 2px solid white;
+	padding: 20px;
+	border-radius: 10px;
+	background-color: #0075528f;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 50%;
+	max-width: 750px;
+	margin: auto;
+	margin-top: 15vh;
+ }
+ 
+ .popup_img {
+	width: 200px;
+	height: 200px;
+ }
+ 
+ .popup_text {
+	font-family: "Playfair Display", sans-serif;
+	text-transform: uppercase;
+	color: white;
+	font-size: 20px;
+	text-align: center;
+
+ }
+ 
+ .popup_button {
+	display: block;
+	background-color: transparent;
+	cursor: pointer;
+	font-family: "Playfair Display", sans-serif;
+	text-transform: uppercase;
+	color: white;
+	font-size: 20px;
+	height: 100%;
+	border: 2px solid white;
+	border-radius: 10px;
+	
+	transition: 0.5s;
+	width: 50%;
+	height: 60px;
+	box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.62);
+ }
+ 
+ .popup_home {
+  margin-top: 20px;
+ }
+ 
+ .popup_button:hover {
+	transform: scale(1.05);
+ }
+ 
+ @media screen and (max-width: 767px){
+	html {
+	  min-height: 1935px;
+	}
+ 
+	.logo {
+	  padding: 10px 0 0 0px;
+	  gap: 20px;
+	  display: block;
+	}
+ 
+	.logo_icon {
+	  display: block;
+	  margin: auto;
+	  width: 370px;
+	  height: 100px;
+	}
+ 
+	.logo_h1 {
+	  padding-top: 10px;
+	  font-size: 32px;
+	  text-align: center;
+	}
+ 
+	.footer {
+	  position: absolute;
+	  bottom: 0;
+	  left: 0;
+	  display: flex;
+	  gap: 15px;
+	  padding: 0 20px 15px 20px;
+	}
+ 
+	.rsschool_wrap {
+	  order: 1;
+	}
+ 
+	.footer_developer {
+	  order: 2;
+	}
+ 
+	.game {
+	  width: calc(100% - 40px);
+	}
+ 
+	.game_stages {
+	  transform: skewX(0deg);
+	  flex-direction: column;
+	  width: 100%;
+	}
+ 
+	.stage {
+	  height: 45px;
+	  width: 100%;
+	}
+ 
+	.stage_active {
+	  border: none;
+	  border-bottom: 2px solid white;
+	  border-top: 2px solid white;
+	}
+	
+	.stage_first {
+	  border-radius: 0;
+	  border-top: none;
+	  border-top-left-radius: 7px;
+	  border-top-right-radius: 7px;
+	}
+	
+	.stage_last {
+	  border-radius: 0;
+	  border-bottom: none;
+	  border-bottom-left-radius: 7px;
+	  border-bottom-right-radius: 7px;
+	}
+ 
+	.stage_text {
+	  transform: skewX(0deg);
+	}
+ 
+	.game_field {
+	  min-height: 1400px;
+	}
+ 
+	.player {
+	  flex-wrap: wrap;
+	  height: 25%;
+	  padding: 0 20px 0 20px;
+	}
+	
+	.image {
+	  width: 100%;
+	}
+ 
+	.image_wrap {
+	  margin: auto;
+	}
+ 
+	.bird_des {
+	  width: 100%;
+	}
+ 
+	.bird_name,
+	.score {
+	  font-size: 20px;
+	  margin-bottom: 15px;
+	}
+ 
+	.bird_name {
+	  margin-right: 30px;
+	}
+ 
+	.selection {
+	  height: 25%;
+	  width: 100%;
+	  border-bottom-left-radius: 0px;
+	}
+ 
+	.option {
+	  overflow: hidden;
+	}
+ 
+	.option_first {
+	  border: none;
+	}
+	
+	.option_last {
+	  border-bottom-left-radius: 0px;
+	}
+ 
+	.option_text{
+	  font-size: 18px;
+	}
+ 
+	.info {
+	  height: 50%;
+	  width: 100%;
+	
+	  border-top: none;
+	  border-left: 1px solid white;
+	}
+ 
+	.info_wrap {
+	  flex-direction: column;
+	  flex-wrap: nowrap;
+	}
+ 
+	.info_image {
+	  width: 100%;
+	  height: 120px;
+	}
+ 
+	.info_image_wrap {
+	  margin: auto;
+	}
+ 
+	.info_bird_des {
+	  margin-top: 10px;
+	  width: 100%;
+	  height: 120px;
+	}
+ 
+	.info_text_wrap {
+	  margin-top: 15px;
+	}
+ 
+	.info_text {
+	  font-size: 20px;
+	}
+ 
+	.button_wrap {
+	  height: 8%;
+	}
+ 
+	.info_audio {
+	  flex: auto;
+	}
+ 
+	.info_bird_name {
+	  flex: auto;
+	}
+ 
+	.info_text_wrap {
+	  height: calc(92% - 240px);
+	}
+ 
+	.popup {
+	  width: 90%;
+	}
+ 
+	.popup_button {
+	  width: 80%;
+	}
+ }
+ 
+ @media screen and (max-width: 470px){
+	html {
+	  min-height: 2010px;
+	}
+ }
+ 
+ .hide {
+	display: none;
+ }
+ 
+ .active {
+	display: block;
+ }
