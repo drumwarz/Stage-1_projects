@@ -504,19 +504,19 @@
 	}
  
 	.logo {
-	  margin: auto;
-	  padding: 10px 0 0 0px;
-	  gap: 20px;
-	  display: block;
-	  width: 320px;
-	}
- 
-	.logo_icon {
-	  display: block;
-	  margin: auto;
-	  width: 80px;
-	  height: 80px;
-	}
+		margin: auto;
+		padding: 10px 0 0 0px;
+		gap: 20px;
+		display: block;
+		width: 320px;
+	 }
+
+	 .logo_icon {
+		display: block;
+		margin: auto;
+		width: 300px;
+		height: 80px;
+	 }
  
 	.logo_h1 {
 	  padding-top: 10px;
