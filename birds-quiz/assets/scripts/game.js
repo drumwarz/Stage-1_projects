@@ -76,15 +76,18 @@ function play() {
     infoPLayWrap.classList.add('hide');
     let text = this.querySelector('.option_text');
     for (let i = 0; i < currStage.length; i++){
-      if (text.textContent === currStage[i].name){
+      if (text.textContent === currStage[i].name && lang === 'ENG'){
         infoHeroImage.src = currStage[i].image;
         voiceInfo.src = currStage[i].audio;
         infoHeroName.textContent = currStage[i].name; 
-        if (lang === 'ENG') {
           infoText.textContent = currStage[i].description;
-        } else {
-          infoText.textContent = currStage[i].desRU;
-        }
+        pauseVoiceInfo();
+        placeAudioInfo();
+      } else if (text.textContent === currStage[i].nameRU && lang === 'RU') {
+        infoHeroImage.src = currStage[i].image;
+        voiceInfo.src = currStage[i].audio;
+        infoHeroName.textContent = currStage[i].name;
+        infoText.textContent = currStage[i].desRU;
         pauseVoiceInfo();
         placeAudioInfo();
       }
