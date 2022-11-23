@@ -86,7 +86,7 @@ function play() {
       } else if (text.textContent === currStage[i].nameRU && lang === 'RU') {
         infoHeroImage.src = currStage[i].image;
         voiceInfo.src = currStage[i].audio;
-        infoHeroName.textContent = currStage[i].name;
+        infoHeroName.textContent = currStage[i].nameRU;
         infoText.textContent = currStage[i].desRU;
         pauseVoiceInfo();
         placeAudioInfo();
@@ -125,7 +125,7 @@ function play() {
       rightAnswer.currentTime = 0;
       rightAnswer.play();
       birdImage.src = currRight.image;
-      birdName.textContent = currRight.name;
+      birdName.textContent = currRight.nameRU;
       dot.classList.add('dot_mark');
       buttonNext.classList.add('button_next_active');
       score += maxScore;
